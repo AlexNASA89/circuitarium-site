@@ -68,8 +68,8 @@ def av4():  # "C" monogram drawn as a circuit trace with nodes
     return im
 
 
-def av5():  # MOSFET cross-section icon: blue substrate, red wells, white gate
-    im = canvas(); d = ImageDraw.Draw(im)
+def av5(bg=True):  # MOSFET cross-section icon: blue substrate, red wells, white gate  (CHOSEN, Alex 39878)
+    im = canvas() if bg else Image.new("RGBA", (S, S), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([C - 270, C - 30, C + 270, C + 190], radius=24, fill=BLUE)
     d.rounded_rectangle([C - 240, C - 30, C - 70, C + 70], radius=20, fill=RED)
     d.rounded_rectangle([C + 70, C - 30, C + 240, C + 70], radius=20, fill=RED)
@@ -93,4 +93,8 @@ if __name__ == "__main__":
     for i, im in enumerate(ims, 1):
         im.convert("RGB").save(os.path.join(OUT, f"av_{i}.png"))
         sheet.paste(preview(im), (20 + (i - 1) * 320, 20)); sd.text((170 + (i - 1) * 320, 350), str(i), font=fnt, fill=(0, 0, 0), anchor="mm")
-    sheet.save(os.path.join(OUT, "sheet.jpg"), quality=90); print("ok")
+    sheet.save(os.path.join(OUT, "sheet.jpg"), quality=90)
+    # chosen = 5: final avatar + transparent icon for watermark / banner / site
+    av5().convert("RGB").save(os.path.join(HERE, "avatar_800.png"))
+    ic = av5(bg=False); ic = ic.crop(ic.getbbox()); ic.save(os.path.join(HERE, "icon.png"))
+    ic.resize((64, round(64 * ic.height / ic.width)), Image.LANCZOS).save(os.path.join(HERE, "icon_64.png")); print("ok")

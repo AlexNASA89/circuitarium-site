@@ -17,7 +17,12 @@ def glow(img, xy, r, col):
 
 
 def mark(img, cx, cy, s):
-    """s = total width of the mark."""
+    """s = total width of the mark. Now the chosen transistor icon (icon.png, Alex 39878)."""
+    ic = Image.open(os.path.join(HERE, "icon.png")); ic = ic.resize((s, round(s * ic.height / ic.width)), Image.LANCZOS)
+    img.alpha_composite(ic, (int(cx - s / 2), int(cy - ic.height / 2))); return
+
+
+def _old_mark(img, cx, cy, s):
     glow(img, (cx, cy), int(s * 0.22), BLUE)
     d = ImageDraw.Draw(img)
     lw, gap, r = int(s * 0.085), int(s * 0.17), int(s * 0.11)
@@ -36,7 +41,7 @@ def grid(img, step, col):
 a = Image.new("RGBA", (800, 800), BG + (255,))
 grid(a, 50, (24, 29, 40))
 mark(a, 400, 400, 520)
-a.convert("RGB").save(os.path.join(HERE, "yt_avatar_800.png"))
+Image.open(os.path.join(HERE, "avatar_800.png")).save(os.path.join(HERE, "yt_avatar_800.png"))  # chosen avatar 5
 
 # ---- banner
 W, H = 2560, 1440

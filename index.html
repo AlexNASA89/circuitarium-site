@@ -8,7 +8,7 @@
 <meta property="og:title" content="Circuitarium">
 <meta property="og:description" content="How chips work, one switch at a time. A short 3D video course, in order.">
 <meta property="og:image" content="https://circuitarium.com/img/covers/0-1.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1118'/%3E%3Cpath d='M6 16h7M19 16h7' stroke='%23ff5d52' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%234a7dff'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="brand/icon_64.png">
 <style>
   :root { --bg:#0e1118; --panel:#151a24; --panel2:#1b2130; --line:#232b3a; --ink:#eef1f6; --dim:#9aa3b2; --gold:#ff5d52; --blue:#4a7dff; --red:#ff5d52; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -20,7 +20,7 @@
   /* top bar */
   .bar { position:sticky; top:0; z-index:20; background:rgba(14,17,24,.86); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
   .bar .wrap { display:flex; align-items:center; gap:12px; height:58px; }
-  .mark { display:flex; align-items:center; gap:4px; }
+  .mark { display:block; width:30px; height:auto; }
   .mark i { display:block; width:14px; height:5px; border-radius:3px; background:var(--gold); }
   .mark b { display:block; width:10px; height:10px; border-radius:50%; background:var(--blue); box-shadow:0 0 10px rgba(74,125,255,.7); }
   .brand { font-weight:800; letter-spacing:.06em; font-size:16px; text-decoration:none; }
@@ -102,7 +102,7 @@
 </head>
 <body>
 <div class="bar"><div class="wrap">
-  <span class="mark" aria-hidden="true"><i></i><b></b><i></i></span>
+  <img class="mark" src="brand/icon_64.png" alt="" aria-hidden="true" width="30" height="25">
   <a class="brand" href="#">CIRCUITARIUM</a>
   <nav class="nav">
     <a class="pill yt" href="https://www.youtube.com/@Circuitarium">▶<span> YouTube</span></a>
