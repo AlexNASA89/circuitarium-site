@@ -4,7 +4,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BG, PANEL, INK, DIM, GOLD, BLUE = (14, 17, 24), (21, 26, 36), (238, 241, 246), (154, 163, 178), (233, 196, 106), (74, 125, 255)
+BG, PANEL, INK, DIM, GOLD, BLUE = (14, 17, 24), (21, 26, 36), (238, 241, 246), (154, 163, 178), (255, 93, 82), (74, 125, 255)  # GOLD now RED (Alex 39870)
 F = "C:/Windows/Fonts/"
 bold = lambda s: ImageFont.truetype(F + "segoeuib.ttf", s)
 reg = lambda s: ImageFont.truetype(F + "segoeui.ttf", s)
