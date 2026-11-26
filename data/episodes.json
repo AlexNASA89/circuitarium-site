@@ -1,0 +1,179 @@
+{
+ "_doc": "Single source of truth for the page. ONLY parts that are already public go into 'published' (per language). Never add covers, titles, ids or URLs of unreleased parts: this file is public. 'parts' is just the planned count. Optional per-language fields the page already understands: stats {views, likes}. Optional per-part: access 'free' | 'members' (members = locked card, no media in this file).",
+ "updated": "2026-11-26",
+ "season": {
+  "n": 1,
+  "name": {
+   "en": "The Calculator",
+   "ru": "Калькулятор"
+  }
+ },
+ "channels": {
+  "en": {
+   "youtube": "https://www.youtube.com/@Circuitarium",
+   "instagram": "https://www.instagram.com/circuitarium/"
+  },
+  "ru": {
+   "instagram": "https://www.instagram.com/circuitarium_rus/"
+  }
+ },
+ "episodes": [
+  {
+   "n": 0,
+   "name": {
+    "en": "Scale",
+    "ru": "Масштаб"
+   },
+   "parts": 3,
+   "published": [
+    {
+     "k": 1,
+     "id": "s1e0p1",
+     "access": "free",
+     "en": {
+      "title": "How many {transistors} on a pen ball?",
+      "date": "2026-11-22",
+      "youtube": "ERx6gD1JGMM",
+      "instagram": "https://www.instagram.com/reel/DgEGmD9CUN5/",
+      "cover": "img/covers/en/0-1.jpg"
+     },
+     "ru": {
+      "title": "Сколько {транзисторов} на шарике ручки?",
+      "date": "2026-11-22",
+      "instagram": "https://www.instagram.com/reel/DgEMAs1DNkF/",
+      "cover": "img/covers/ru/0-1.jpg"
+     }
+    },
+    {
+     "k": 2,
+     "id": "s1e0p2",
+     "access": "free",
+     "en": {
+      "title": "How small is one transistor?",
+      "date": "2026-11-23",
+      "youtube": "ROxpG3Dwx_g",
+      "instagram": "https://www.instagram.com/reel/DgGYeINAC0k/",
+      "cover": "img/covers/en/0-2.jpg"
+     },
+     "ru": {
+      "title": "Насколько мал один транзистор?",
+      "date": "2026-11-23",
+      "instagram": "https://www.instagram.com/reel/DgGZNGzG1HG/",
+      "cover": "img/covers/ru/0-2.jpg"
+     }
+    },
+    {
+     "k": 3,
+     "id": "s1e0p3",
+     "access": "free",
+     "en": {
+      "title": "How small can a transistor get?",
+      "date": "2026-11-24",
+      "youtube": "3yaduyqpVIo",
+      "instagram": "https://www.instagram.com/reel/DgJWGDOFSjr/",
+      "cover": "img/covers/en/0-3.jpg"
+     },
+     "ru": {
+      "title": "До какого размера можно уменьшать?",
+      "date": "2026-11-24",
+      "instagram": "https://www.instagram.com/reel/DgJWhlFlrs8/",
+      "cover": "img/covers/ru/0-3.jpg"
+     }
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "name": {
+    "en": "The Transistor",
+    "ru": "Транзистор"
+   },
+   "parts": 3,
+   "published": [
+    {
+     "k": 1,
+     "id": "s1e1p1",
+     "access": "free",
+     "en": {
+      "title": "What's {inside} a transistor?",
+      "date": "2026-11-25",
+      "youtube": "BLZ4HBlP8iY",
+      "instagram": "https://www.instagram.com/reel/DgL_AT6SKEj/",
+      "cover": "img/covers/en/1-1.jpg"
+     },
+     "ru": {
+      "title": "Что внутри {транзистора}?",
+      "date": "2026-11-25",
+      "instagram": "https://www.instagram.com/reel/DgLBqctBYXo/",
+      "cover": "img/covers/ru/1-1.jpg"
+     }
+    },
+    {
+     "k": 2,
+     "id": "s1e1p2",
+     "access": "free",
+     "ru": {
+      "title": "Как включить ток, {ничего не двигая}?",
+      "date": "2026-11-26",
+      "instagram": "https://www.instagram.com/reel/DgNZLZHSkK-/",
+      "cover": "img/covers/ru/1-2.jpg"
+     }
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": {
+    "en": "AND, OR, NOT",
+    "ru": "И, ИЛИ, НЕ"
+   },
+   "parts": 5,
+   "published": []
+  },
+  {
+   "n": 3,
+   "name": {
+    "en": "Boolean Algebra",
+    "ru": "Булева алгебра"
+   },
+   "parts": 6,
+   "published": []
+  },
+  {
+   "n": 4,
+   "name": {
+    "en": "Binary Numbers",
+    "ru": "Двоичные числа"
+   },
+   "parts": 5,
+   "published": []
+  },
+  {
+   "n": 5,
+   "name": {
+    "en": "The Adder",
+    "ru": "Сумматор"
+   },
+   "parts": 6,
+   "published": []
+  },
+  {
+   "n": 6,
+   "name": {
+    "en": "Big Numbers",
+    "ru": "Большие числа"
+   },
+   "parts": 5,
+   "published": []
+  },
+  {
+   "n": 7,
+   "name": {
+    "en": "A Real Chip",
+    "ru": "Настоящий чип"
+   },
+   "parts": 7,
+   "published": []
+  }
+ ]
+}
