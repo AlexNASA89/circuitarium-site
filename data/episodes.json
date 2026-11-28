@@ -1,6 +1,6 @@
 {
  "_doc": "Single source of truth for the page. ONLY parts that are already public go into 'published' (per language). Never add covers, titles, ids or URLs of unreleased parts: this file is public. 'parts' is just the planned count. Optional per-language fields the page already understands: stats {views, likes}. Optional per-part: access 'free' | 'members' (members = locked card, no media in this file).",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "season": {
   "n": 1,
   "name": {
@@ -153,7 +153,26 @@
     "ru": "И, ИЛИ, НЕ"
    },
    "parts": 5,
-   "published": []
+   "published": [
+    {
+     "k": 1,
+     "id": "s1e2p1",
+     "access": "free",
+     "en": {
+      "title": "Why do transistors come in {pairs}?",
+      "date": "2026-11-28",
+      "youtube": "W836OBfOhpQ",
+      "instagram": "https://www.instagram.com/reel/DgSnJQXBrKR/",
+      "cover": "img/covers/en/2-1.jpg"
+     },
+     "ru": {
+      "title": "Почему транзисторы ставят {парами}?",
+      "date": "2026-11-28",
+      "instagram": "https://www.instagram.com/reel/DgSmwzAhh9R/",
+      "cover": "img/covers/ru/2-1.jpg"
+     }
+    }
+   ]
   },
   {
    "n": 3,
